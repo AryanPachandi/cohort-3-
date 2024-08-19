@@ -18,7 +18,7 @@
             render();
         }
         function edit_todo(index) {
-          const newtodo= prompt("enter you new TODO",) 
+          const newtodo= prompt("enter your new TODO",) 
                   if (newtodo!==null&&newtodo!=="") {
                     todos[index].title=newtodo;
                     render();
