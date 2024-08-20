@@ -1,1 +1,1 @@
-# cohort-3
+mini-projects
