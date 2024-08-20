@@ -1,58 +1,64 @@
 
         * {
-            background-color: #474646;   
+          background-color: #DCEED1;
+/* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 50%); */
             margin: 0;;
             box-sizing: border-box;
         }
         .display {
             
             width: 500px;
-            border: 10px solid #5f67fc;
+            border: 10px solid #736372;
             padding: 20px;
             margin: 20px;
             box-sizing: border-box; 
-            border-radius: 50px 
+            border-radius: 20px 
         }
         #todos{
          
-          color: aliceblue;
+          color: #161316;
         }
         .list {
             
-            background-color: rgb(164, 164, 237);
+            background-color: #AC9186;
             width: 500px;
-            border: 10px solid green;
+            border: 10px solid #A18276;
             padding: 20px;
             margin: 20px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            border-radius: 50px
+            border-radius: 20px
         }
         .block {
             display: flex;
             justify-content: center;
-            background-color: rgb(0, 0, 0);
-            padding: 20px; 
+            background-color: #AAC0AA;
+            
+            
+            padding: 100px; 
             margin: 20px; 
-            border-radius: 50px;
+            border-radius: 10px;
+            box-shadow: 2px 2px black 0.3;
         }
         .head {
-            font-weight: 100;
-            font-size: 1.5rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: aliceblue;
+            font-weight: 20rem;
+            font-size: 4rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #161316;
             display: flex;
             flex-direction: column;
             justify-content: center; 
             align-items: center; 
             padding: 50px; 
+            gap: 0.5rem;
+            text-shadow:4px 4px rgb(255, 253, 253);
            
         }
         .bt{
            
-            color: greenyellow;
+            color: black;
             font-size: 1rem;
             font-family: monospace;
             box-sizing: border-box;
@@ -64,7 +70,7 @@
         #todo-input{
         
             background-color: rgb(75, 166, 245);
-            color: #fffefe;
+            color:black;
             font-size: 1rem;
             font-family: monospace;
             box-sizing: border-box;
