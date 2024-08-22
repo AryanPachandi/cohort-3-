@@ -1,1 +1,1 @@
-# min-projects
+# cohort-3 assignments
