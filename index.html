@@ -6,33 +6,27 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="todo.css">
     <script src="todo.js"></script>
-    <link
-            rel="shortcut icon"
-            href="download.png"type="image/x-icon";
-        />
 </head>
 <body>
     <header>
         <nav>
             <div class="head">
-                    
-                <h1>TO DO LIST</h1>
-                
+                <h1>TO DO LIST</h1> 
             </div>
         </nav>
     </header>
+    
     <div class="block">
         <div class="display">
             <div id="todos"></div>
         </div>
+        
         <div class="list">
             <input type="text" id="todo-input" placeholder="Enter your todo">
-            <button class="bt" onclick="addTodo()">Add todo!</button>
-            <button id="dl-la-to" onclick="deleteLastTodo()">Delete last todo</button>
-            <button id="dl-fr-to" onclick="deleteFirstTodo()">Delete first todo</button>
+            <button id="add-todo" class="bt" onclick="addTodo()">Add todo!</button> 
+            <!-- <button id="dl-la-to" onclick="deleteLastTodo()">Delete last todo</button> -->
+            <!-- <button id="dl-fr-to" onclick="deleteFirstTodo()">Delete first todo</button> -->
         </div>
     </div>
-    
 </body>
 </html>
-
