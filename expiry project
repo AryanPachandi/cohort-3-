@@ -1,0 +1,44 @@
+const express = require('express');
+const app = express();
+
+
+app.use(express.json())
+
+const QRCode = require('qrcode');
+
+
+app.post('/entey-product', async (req, res) => {
+  const { name, expiaryDate, price } = req.body;
+  console.log('Request Body:', req.body); // Print the request body
+
+  const data = String(name) + String(expiaryDate) + String(price);
+  console.log('Data:', data); // Print the data variable
+
+  try {
+    await QRCode.toFile('example-qr.png', data, {
+      color: {
+        dark: '#000000',
+        light: '#ffffff'
+      }
+    });
+
+    console.log('QR Code saved as example-qr.png');
+
+    const url = await QRCode.toDataURL(data);
+
+    console.log('Generated QR Code as Data URL:', url);
+
+    res.status(200).json({
+      message: 'QR code generated successfully.',
+      filePath: 'example-qr.png',
+      dataUrl: url
+    });
+  } catch (err) {
+    console.error('Error generating QR code:', err);
+    res.status(500).send('Error generating QR code.');
+  }
+});
+
+app.listen(3000, () => {
+  console.log('server started');
+})
